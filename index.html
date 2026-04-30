@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,41 +28,73 @@
   </script>
   <style>
     @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
     }
+
     @keyframes slideUp {
-      from { transform: translateY(20px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
+      from {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
     }
+
     @keyframes float {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-10px); }
+
+      0%,
+      100% {
+        transform: translateY(0px);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
     }
+
     @keyframes glow {
-      from { box-shadow: 0 0 20px rgba(99, 102, 241, 0.5); }
-      to { box-shadow: 0 0 30px rgba(99, 102, 241, 0.8), 0 0 40px rgba(99, 102, 241, 0.3); }
+      from {
+        box-shadow: 0 0 20px rgba(99, 102, 241, 0.5);
+      }
+
+      to {
+        box-shadow: 0 0 30px rgba(99, 102, 241, 0.8), 0 0 40px rgba(99, 102, 241, 0.3);
+      }
     }
+
     .glass {
       background: rgba(255, 255, 255, 0.05);
       backdrop-filter: blur(10px);
       border: 1px solid rgba(255, 255, 255, 0.1);
     }
+
     .gradient-text {
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
     }
+
     .card-hover {
       transition: all 0.3s ease;
     }
+
     .card-hover:hover {
       transform: translateY(-5px);
       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     }
   </style>
 </head>
+
 <body class="bg-slate-900 text-gray-100 font-sans antialiased">
   <!-- Navigation -->
   <nav class="fixed top-0 w-full z-50 glass">
@@ -89,30 +122,36 @@
     <div class="text-center max-w-4xl mx-auto animate-fade-in">
       <div class="relative flex justify-center mb-10">
         <div class="relative">
-          <img src="./images/my-face.jpg" class="w-44 h-44 mx-auto rounded-full border-4 border-indigo-500 shadow-2xl z-10" alt="Ronald Abel">
+          <img src="./images/my-face.jpg"
+            class="w-44 h-44 mx-auto rounded-full border-4 border-indigo-500 shadow-2xl z-10" alt="Ronald Abel">
         </div>
       </div>
       <h1 class="text-6xl md:text-7xl font-bold mb-6">
         <span class="gradient-text">Hi, I'm Ronald</span>
       </h1>
       <p class="text-lg text-gray-300 mb-6 max-w-2xl mx-auto">
-        Computer Science student & aspiring <span class="text-indigo-400 font-semibold">full-stack developer</span> with experience in web and mobile apps. Seeking entry-level roles to grow and contribute.
+        <span class="text-indigo-400 font-semibold">Full-stack developer</span> building practical web and mobile
+        solutions that solve real-world problems.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-        <a href="#projects" class="inline-flex items-center bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-3 rounded-full hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
+        <a href="#projects"
+          class="inline-flex items-center bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-3 rounded-full hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
           <span class="mr-2">View My Work</span>
           <i class="fas fa-arrow-down"></i>
         </a>
-        <a href="#contact" class="inline-flex items-center border-2 border-indigo-500 text-indigo-400 px-8 py-3 rounded-full hover:bg-indigo-500 hover:text-white transition-all duration-300">
+        <a href="#contact"
+          class="inline-flex items-center border-2 border-indigo-500 text-indigo-400 px-8 py-3 rounded-full hover:bg-indigo-500 hover:text-white transition-all duration-300">
           <span class="mr-2">Get In Touch</span>
           <i class="fas fa-envelope"></i>
         </a>
       </div>
       <div class="flex justify-center space-x-6 mt-8">
-        <a href="https://github.com/ronald2117" target="_blank" class="text-gray-400 hover:text-white transition-colors transform hover:scale-110">
+        <a href="https://github.com/ronald2117" target="_blank"
+          class="text-gray-400 hover:text-white transition-colors transform hover:scale-110">
           <i class="fab fa-github text-2xl"></i>
         </a>
-        <a href="https://www.linkedin.com/in/ronald-abel-bab495212/" target="_blank" class="text-gray-400 hover:text-white transition-colors transform hover:scale-110">
+        <a href="https://www.linkedin.com/in/ronald-abel-bab495212/" target="_blank"
+          class="text-gray-400 hover:text-white transition-colors transform hover:scale-110">
           <i class="fab fa-linkedin text-2xl"></i>
         </a>
       </div>
@@ -128,29 +167,31 @@
           Passionate about creating innovative solutions and bringing ideas to life through code
         </p>
       </div>
-      
+
       <div class="grid md:grid-cols-2 gap-12 items-center">
         <div class="space-y-6">
           <p class="text-lg text-gray-300 leading-relaxed">
-            I'm a dedicated full-stack developer with a passion for creating seamless digital experiences. 
-            I love working with modern technologies and frameworks to build applications that solve real-world problems.
+            I’m a full-stack developer focused on building practical web and mobile solutions that solve real-world
+            problems. I work across the stack to create applications that are not only functional, but intuitive and
+            reliable for everyday use.
           </p>
           <p class="text-lg text-gray-300 leading-relaxed">
-            My journey in software development has led me to work with various technologies, from web applications 
-            to mobile apps, always focusing on clean code, user experience, and scalable solutions.
+            My experience includes developing both web and mobile apps using modern technologies, with a strong emphasis
+            on clean code, performance, and user experience. I aim to build systems that are scalable, maintainable, and
+            genuinely useful to the people who use them.
           </p>
         </div>
-        
+
         <div class="grid grid-cols-2 gap-6">
           <div class="glass p-6 rounded-xl text-center">
             <i class="fas fa-code text-3xl text-indigo-400 mb-4"></i>
             <h3 class="text-xl font-semibold mb-2">Frontend</h3>
-            <p class="text-gray-400 text-sm">React, JavaScript, HTML/CSS</p>
+            <p class="text-gray-400 text-sm">React, JavaScript, HTML/CSS, TailwindCSS</p>
           </div>
           <div class="glass p-6 rounded-xl text-center">
             <i class="fas fa-server text-3xl text-indigo-400 mb-4"></i>
             <h3 class="text-xl font-semibold mb-2">Backend</h3>
-            <p class="text-gray-400 text-sm">C#, PHP, ASP.NET, MySQL</p>
+            <p class="text-gray-400 text-sm">Node.js, Laravel, ASP.NET, MySQL</p>
           </div>
           <div class="glass p-6 rounded-xl text-center">
             <i class="fas fa-mobile-alt text-3xl text-indigo-400 mb-4"></i>
@@ -160,7 +201,7 @@
           <div class="glass p-6 rounded-xl text-center">
             <i class="fas fa-tools text-3xl text-indigo-400 mb-4"></i>
             <h3 class="text-xl font-semibold mb-2">Tools</h3>
-            <p class="text-gray-400 text-sm">Git, Visual Studio, APIs</p>
+            <p class="text-gray-400 text-sm">Git, Visual Studio, Neovim</p>
           </div>
         </div>
       </div>
@@ -178,9 +219,10 @@
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Project Card -->
-         <div class="glass rounded-2xl overflow-hidden card-hover group">
+        <div class="glass rounded-2xl overflow-hidden card-hover group">
           <div class="h-48 bg-gradient-to-br from-slate-700 to-slate-800 relative overflow-hidden">
-            <img src="./images/recipe_management_system.png" alt="Recipe Management System" class="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110" />
+            <img src="./images/recipe_management_system.png" alt="Recipe Management System"
+              class="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110" />
             <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
           </div>
           <div class="p-6">
@@ -190,22 +232,26 @@
             </div>
             <h3 class="text-xl font-semibold mb-3 text-white">Recipe Management System</h3>
             <p class="text-gray-400 mb-4 leading-relaxed">
-              Developed a robust web application using C# and ASP.NET MVC to organize and discover recipes efficiently. Integrated AI-powered ingredient analysis and external APIs.
+              Developed a robust web application using C# and ASP.NET MVC to organize and discover recipes efficiently.
+              Integrated AI-powered ingredient analysis and external APIs.
             </p>
             <div class="flex gap-3">
-              <a href="https://github.com/CowBreado/FlavorFind-CSPL-Final-Project" target="_blank" class="flex items-center gap-2 text-indigo-400 hover:text-indigo-300 transition-colors">
+              <a href="https://github.com/CowBreado/FlavorFind-CSPL-Final-Project" target="_blank"
+                class="flex items-center gap-2 text-indigo-400 hover:text-indigo-300 transition-colors">
                 <i class="fab fa-github"></i> GitHub
               </a>
-              <a href="http://flavorfind.runasp.net/" target="_blank" class="flex items-center gap-2 text-emerald-400 hover:text-emerald-300 transition-colors">
+              <a href="http://flavorfind.runasp.net/" target="_blank"
+                class="flex items-center gap-2 text-emerald-400 hover:text-emerald-300 transition-colors">
                 <i class="fas fa-external-link-alt"></i> Live Demo
               </a>
             </div>
           </div>
         </div>
-        
+
         <div class="glass rounded-2xl overflow-hidden card-hover group">
           <div class="h-48 bg-gradient-to-br from-slate-700 to-slate-800 relative overflow-hidden">
-            <img src="./images/restaurant-system.png" alt="Restaurant Management System" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+            <img src="./images/restaurant-system.png" alt="Restaurant Management System"
+              class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
             <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
           </div>
           <div class="p-6">
@@ -215,10 +261,12 @@
             </div>
             <h3 class="text-xl font-semibold mb-3 text-white">Restaurant Management System</h3>
             <p class="text-gray-400 mb-4 leading-relaxed">
-              Built a comprehensive desktop application with Visual Basic and MySQL for streamlined restaurant operations with order processing and inventory management.
+              Built a comprehensive desktop application with Visual Basic and MySQL for streamlined restaurant
+              operations with order processing and inventory management.
             </p>
             <div class="flex gap-3">
-              <a href="https://github.com/zyte09/RestaurantManagementSystemCS" target="_blank" class="flex items-center gap-2 text-indigo-400 hover:text-indigo-300 transition-colors">
+              <a href="https://github.com/zyte09/RestaurantManagementSystemCS" target="_blank"
+                class="flex items-center gap-2 text-indigo-400 hover:text-indigo-300 transition-colors">
                 <i class="fab fa-github"></i> GitHub
               </a>
               <span class="flex items-center gap-2 text-gray-500 cursor-not-allowed">
@@ -227,10 +275,11 @@
             </div>
           </div>
         </div>
-        
+
         <div class="glass rounded-2xl overflow-hidden card-hover group">
           <div class="h-48 bg-gradient-to-br from-slate-700 to-slate-800 relative overflow-hidden">
-            <img src="./images/flavorfind-mobile.png" alt="Recipe Sharing Mobile App" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+            <img src="./images/flavorfind-mobile.png" alt="Recipe Sharing Mobile App"
+              class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
             <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
           </div>
           <div class="p-6">
@@ -240,26 +289,30 @@
             </div>
             <h3 class="text-xl font-semibold mb-3 text-white">Recipe Sharing Mobile App</h3>
             <p class="text-gray-400 mb-4 leading-relaxed">
-              Created a cross-platform mobile app with React Native and Firebase for sharing and discovering recipes with AI-powered recommendations.
+              Created a cross-platform mobile app with React Native and Firebase for sharing and discovering recipes
+              with AI-powered recommendations.
             </p>
             <div class="flex gap-3">
-              <a href="https://github.com/ronald2117/ITECC06-FINALS" target="_blank" class="flex items-center gap-2 text-indigo-400 hover:text-indigo-300 transition-colors">
+              <a href="https://github.com/ronald2117/ITECC06-FINALS" target="_blank"
+                class="flex items-center gap-2 text-indigo-400 hover:text-indigo-300 transition-colors">
                 <i class="fab fa-github"></i> GitHub
               </a>
-              <a href="https://drive.google.com/drive/folders/1fQVMjCDes-mY1IXmFt3dm8KNMc62tzsc" target="_blank" class="flex items-center gap-2 text-emerald-400 hover:text-emerald-300 transition-colors">
+              <a href="https://drive.google.com/drive/folders/1fQVMjCDes-mY1IXmFt3dm8KNMc62tzsc" target="_blank"
+                class="flex items-center gap-2 text-emerald-400 hover:text-emerald-300 transition-colors">
                 <i class="fas fa-download"></i> Download APK
               </a>
             </div>
           </div>
         </div>
-        
+
         <div class="glass rounded-2xl overflow-hidden card-hover group">
           <div class="h-48 bg-gradient-to-br from-slate-700 to-slate-800 relative overflow-hidden">
-            <img src="./images/hanaplokal.png" alt="Library Management System" class="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110" />
+            <img src="./images/hanaplokal.png" alt="Library Management System"
+              class="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110" />
             <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
           </div>
           <div class="p-6">
-            <div class="flex items-center gap-2 mb-3">                                                                                                                                                                                                      
+            <div class="flex items-center gap-2 mb-3">
               <span class="px-3 py-1 bg-pink-500/20 text-pink-300 text-xs rounded-full">Mobile App</span>
               <span class="px-3 py-1 bg-cyan-500/20 text-cyan-300 text-xs rounded-full">React Native</span>
             </div>
@@ -268,19 +321,22 @@
               HanapLokal is a mobile app that helps people discover and connect with local stores and services.
             </p>
             <div class="flex gap-3">
-              <a href="https://github.com/ronald2117/HanapLokal" target="_blank" class="flex items-center gap-2 text-indigo-400 hover:text-indigo-300 transition-colors">
+              <a href="https://github.com/ronald2117/HanapLokal" target="_blank"
+                class="flex items-center gap-2 text-indigo-400 hover:text-indigo-300 transition-colors">
                 <i class="fab fa-github"></i> GitHub
               </a>
-              <a href="https://ronald2117.github.io/hanaplokal-download-page/" target="_blank" class="flex items-center gap-2 text-emerald-400 hover:text-emerald-300 transition-colors">
+              <a href="https://ronald2117.github.io/hanaplokal-download-page/" target="_blank"
+                class="flex items-center gap-2 text-emerald-400 hover:text-emerald-300 transition-colors">
                 <i class="fas fa-download"></i> Download APK
               </a>
             </div>
           </div>
         </div>
-        
+
         <div class="glass rounded-2xl overflow-hidden card-hover group">
           <div class="h-48 bg-gradient-to-br from-slate-700 to-slate-800 relative overflow-hidden">
-            <img src="./images/tictactoe.png" alt="Tic-Tac-Toe Game" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+            <img src="./images/tictactoe.png" alt="Tic-Tac-Toe Game"
+              class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
             <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
           </div>
           <div class="p-6">
@@ -290,22 +346,26 @@
             </div>
             <h3 class="text-xl font-semibold mb-3 text-white">Tic-Tac-Toe Game</h3>
             <p class="text-gray-400 mb-4 leading-relaxed">
-                A modern Tic-Tac-Toe game replicating a Figma design using custom CSS and JavaScript, showcasing UI/UX implementation skills.
+              A modern Tic-Tac-Toe game replicating a Figma design using custom CSS and JavaScript, showcasing UI/UX
+              implementation skills.
             </p>
             <div class="flex gap-3">
-              <a href="https://github.com/ronald2117/Project-Tic-Tac-Toe-TOP" target="_blank" class="flex items-center gap-2 text-indigo-400 hover:text-indigo-300 transition-colors">
+              <a href="https://github.com/ronald2117/Project-Tic-Tac-Toe-TOP" target="_blank"
+                class="flex items-center gap-2 text-indigo-400 hover:text-indigo-300 transition-colors">
                 <i class="fab fa-github"></i> GitHub
               </a>
-              <a href="https://ronald2117.github.io/Project-Tic-Tac-Toe-TOP/" target="_blank" class="flex items-center gap-2 text-emerald-400 hover:text-emerald-300 transition-colors">
+              <a href="https://ronald2117.github.io/Project-Tic-Tac-Toe-TOP/" target="_blank"
+                class="flex items-center gap-2 text-emerald-400 hover:text-emerald-300 transition-colors">
                 <i class="fas fa-external-link-alt"></i> Live Demo
               </a>
             </div>
           </div>
         </div>
-        
+
         <div class="glass rounded-2xl overflow-hidden card-hover group">
           <div class="h-48 bg-gradient-to-br from-slate-700 to-slate-800 relative overflow-hidden">
-            <img src="./images/pos.png" alt="Modern POS System" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+            <img src="./images/pos.png" alt="Modern POS System"
+              class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
             <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
           </div>
           <div class="p-6">
@@ -315,10 +375,12 @@
             </div>
             <h3 class="text-xl font-semibold mb-3 text-white">Modern POS System</h3>
             <p class="text-gray-400 mb-4 leading-relaxed">
-                Developed a modern Point of Sale system using PHP with efficient sales processing, inventory management, and comprehensive reporting tools.
+              Developed a modern Point of Sale system using PHP with efficient sales processing, inventory management,
+              and comprehensive reporting tools.
             </p>
             <div class="flex gap-3">
-              <a href="https://github.com/ronald2117/TCSPOS" target="_blank" class="flex items-center gap-2 text-indigo-400 hover:text-indigo-300 transition-colors">
+              <a href="https://github.com/ronald2117/TCSPOS" target="_blank"
+                class="flex items-center gap-2 text-indigo-400 hover:text-indigo-300 transition-colors">
                 <i class="fab fa-github"></i> GitHub
               </a>
               <span class="flex items-center gap-2 text-gray-500 cursor-not-allowed">
@@ -343,17 +405,21 @@
       <form action="https://formspree.io/f/mrbqdogl" method="POST" class="space-y-6 glass p-8 rounded-2xl">
         <div>
           <label for="name" class="block text-sm font-medium mb-2 text-gray-200">Name</label>
-          <input type="text" id="name" name="name" required class="w-full bg-slate-800/50 border border-slate-600 text-gray-100 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all" />
+          <input type="text" id="name" name="name" required
+            class="w-full bg-slate-800/50 border border-slate-600 text-gray-100 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all" />
         </div>
         <div>
           <label for="email" class="block text-sm font-medium mb-2 text-gray-200">Email</label>
-          <input type="email" id="email" name="email" required class="w-full bg-slate-800/50 border border-slate-600 text-gray-100 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all" />
+          <input type="email" id="email" name="email" required
+            class="w-full bg-slate-800/50 border border-slate-600 text-gray-100 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all" />
         </div>
         <div>
           <label for="message" class="block text-sm font-medium mb-2 text-gray-200">Message</label>
-          <textarea id="message" name="message" rows="5" required class="w-full bg-slate-800/50 border border-slate-600 text-gray-100 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all resize-none"></textarea>
+          <textarea id="message" name="message" rows="5" required
+            class="w-full bg-slate-800/50 border border-slate-600 text-gray-100 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all resize-none"></textarea>
         </div>
-        <button type="submit" class="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-3 rounded-xl hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg font-medium">
+        <button type="submit"
+          class="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-3 rounded-xl hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg font-medium">
           Send Message
         </button>
       </form>
