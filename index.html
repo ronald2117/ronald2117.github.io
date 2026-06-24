@@ -92,6 +92,27 @@
       transform: translateY(-5px);
       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     }
+
+    .adaptive-img-wrapper {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .adaptive-img-wrapper img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .adaptive-img-wrapper img:hover {
+      transform: scale(1.03);
+    }
+
+    .gif-hover {
+      cursor: pointer;
+    }
   </style>
 </head>
 
@@ -277,9 +298,9 @@
         </div>
 
         <div class="glass rounded-2xl overflow-hidden card-hover group">
-          <div class="h-48 bg-gradient-to-br from-slate-700 to-slate-800 relative overflow-hidden">
+          <div class="bg-gradient-to-br from-slate-700 to-slate-800 relative overflow-hidden adaptive-img-wrapper">
             <img src="./images/flavorfind-mobile.png" alt="Recipe Sharing Mobile App"
-              class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+              class="w-full h-auto transition-transform duration-300 group-hover:scale-110" />
             <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
           </div>
           <div class="p-6">
@@ -306,9 +327,9 @@
         </div>
 
         <div class="glass rounded-2xl overflow-hidden card-hover group">
-          <div class="h-48 bg-gradient-to-br from-slate-700 to-slate-800 relative overflow-hidden">
+          <div class="bg-gradient-to-br from-slate-700 to-slate-800 relative overflow-hidden adaptive-img-wrapper">
             <img src="./images/hanaplokal.png" alt="Library Management System"
-              class="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110" />
+              class="w-full h-auto transition-transform duration-300 group-hover:scale-110" />
             <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
           </div>
           <div class="p-6">
@@ -334,9 +355,9 @@
         </div>
 
         <div class="glass rounded-2xl overflow-hidden card-hover group">
-          <div class="h-48 bg-gradient-to-br from-slate-700 to-slate-800 relative overflow-hidden">
+          <div class="bg-gradient-to-br from-slate-700 to-slate-800 relative overflow-hidden adaptive-img-wrapper">
             <img src="./images/tshsems.png" alt="Tic-Tac-Toe Game"
-              class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+              class="w-full h-auto transition-transform duration-300 group-hover:scale-110" />
             <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
           </div>
           <div class="p-6">
@@ -363,29 +384,33 @@
         </div>
 
         <div class="glass rounded-2xl overflow-hidden card-hover group">
-          <div class="h-48 bg-gradient-to-br from-slate-700 to-slate-800 relative overflow-hidden">
-            <img src="./images/pos.png" alt="Modern POS System"
-              class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
-            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+          <div class="bg-gradient-to-br from-slate-700 to-slate-800 relative overflow-hidden adaptive-img-wrapper">
+            <img src="./images/saripos.png" 
+              alt="SariPOS - Offline Sari-Sari Store POS"
+              onmouseover="this.src='./images/saripos.gif'"
+              onmouseout="this.src='./images/saripos.png'"
+              class="w-full h-auto gif-hover transition-transform duration-300 group-hover:scale-110" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent pointer-events-none"></div>
           </div>
           <div class="p-6">
             <div class="flex items-center gap-2 mb-3">
               <span class="px-3 py-1 bg-orange-500/20 text-orange-300 text-xs rounded-full">Web App</span>
-              <span class="px-3 py-1 bg-violet-500/20 text-violet-300 text-xs rounded-full">PHP</span>
+              <span class="px-3 py-1 bg-violet-500/20 text-violet-300 text-xs rounded-full">React.js</span>
             </div>
-            <h3 class="text-xl font-semibold mb-3 text-white">Modern POS System</h3>
+            <h3 class="text-xl font-semibold mb-3 text-white">SariPOS - Offline Sari-Sari Store POS</h3>
             <p class="text-gray-400 mb-4 leading-relaxed">
-              Developed a modern Point of Sale system using PHP with efficient sales processing, inventory management,
-              and comprehensive reporting tools.
+              SariPOS is a modern point-of-sale system designed for small neighborhood stores, built with React.js
+              and Firebase for offline-first functionality, inventory management, and sales analytics.
             </p>
             <div class="flex gap-3">
               <a href="https://github.com/ronald2117/TCSPOS" target="_blank"
                 class="flex items-center gap-2 text-indigo-400 hover:text-indigo-300 transition-colors">
                 <i class="fab fa-github"></i> GitHub
               </a>
-              <span class="flex items-center gap-2 text-gray-500 cursor-not-allowed">
-                <i class="fas fa-external-link-alt"></i> Demo Coming Soon
-              </span>
+              <a href="https://saripos-offline-sari-sari-store-pos-855652944970.asia-southeast1.run.app/pos" target="_blank"
+                class="flex items-center gap-2 text-emerald-400 hover:text-emerald-300 transition-colors">
+                <i class="fas fa-external-link-alt"></i>Live Demo
+              </a>
             </div>
           </div>
         </div>
